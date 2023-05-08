@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> <!--libreria que se usa-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.css"> <!--alerta de compra realizada-->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+
+
+    <header class="header">
+        <div class="menu container"><!--INPUT DE LA NAVEGACIÓN-->
+           <a href="#" class="logo">NAT-Shop</a> <!--logotipo con enlace-->
+           <input type="checkbox" id="menu" /><!--<label> representa una etiqueta para un elemento en una interfaz de usuario.-->
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label> 
+            <nav class="navbar"> <!--nav es una navegación - nombre de la clase "NAVBAR"-->
+               <ul>    <!--Lista desordenada con enlace agregado con el "#"-->
+                   <li><a href="#">Inicio</a></li> 
+                   <li><a href="#">Servicios</a></li>
+                   <li><a href="#">Productos</a></li>
+                   <li><a href="#">Contacto</a></li>
+               </ul>
+           </nav>
+           <div><!--DIV DEL CARRITO-->
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt=""> <!--fotito del carrito jajaja - <alt="solo es una texto alternativo">-->
+                      <div id="carrito">
+                          <table id="lista-carrito">
+                          <thead> <!--thead contiene a un bloque de filas-->
+                             <tr> <!--tr fila de la tabla, arriba a abajo-->
+                                    <th>Imagen</th><!--th define celda como encabezado-->
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                              </tr>
+                          </thead>
+                            <tbody></tbody> <!--cuerpo de la tabla-->
+                           </table> 
+                           <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a> <!--boton para vaciar carrito-->
+                           <a href="#" id="confirmar-carrito" class="btn-3">Confirmar compra</a>
+                        </div>
+                 </li>
+                </ul>
+           </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide"> <!--se repite varias veces-->
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>Cascos De Alta Calidad</h1>
+                                <div class="prices">
+                                    <p class="price-1">$199</p>
+                                    <p class="price-2">$175</p>
+                                </div>
+                                <a href="#" class="btn-1">Informacion</a>  <!--enlace tipo boton-->
+                            </div>
+                            <div class="header-img">
+                                <img src="images/bg1.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide"> <!--reply 2-->
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>BlueBirts</h1>
+                                <h3>Limited edition</h3>
+                                <div class="prices">
+                                    <p class="price-1">$250</p>
+                                    <p class="price-2">$155</p>
+                                </div>
+                                <!---<a href="#" class="btn-1">Informacion</a>--> <!--enlace tipo boton-->
+                            </div>
+                            <div class="header-img">
+                                <img src="images/bg2.png" alt="">
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="swiper-slide"><!--reply 3-->
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>Audifonos De Bolsillo</h1>
+                                <div class="prices">
+                                    <p class="price-1">$50</p>
+                                    <p class="price-2">$35</p>
+                                </div>
+                                <!---<a href="#" class="btn-1">Informacion</a>--> <!--enlace tipo boton-->
+                            </div>
+                            <div class="header-img">
+                                <img src="images/bg3.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <section class="promos container" id="lista-1">
+        <h2>Promociones</h2>
+        <h3>Auriculares De Bolsillo</h3>
+        <div class="categories">
+            <div class="categorie"><!--se repite varias veces-->
+                <div class="categorie-1">
+                 <h3>Promo 1</h3>
+                 <div class="prices">
+                  <p class="price-1">$1999</p>
+                  <p class="prico">$1500</p>
+                </div>  
+                <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>    
+                <div class="categorie-img">
+                 <img src="images/ph1.png" alt="">
+                </div>
+            </div>
+            <div class="categorie"><!--reply 2-->
+                <div class="categorie-1">
+                 <h3>Promo 2</h3>
+                 <div class="prices">
+                  <p class="price-1">$1999</p>
+                  <p class="prico">$1500</p>
+                </div>  
+                <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>    
+                <div class="categorie-img">
+                 <img src="images/ph2.png" alt="">
+                </div>
+            </div>
+            <div class="categorie"><!--reply 3-->
+                <div class="categorie-1">
+                 <h3>Promo 3</h3>
+                 <div class="prices">
+                  <p class="price-1">$1999</p>
+                  <p class="prico">$1500</p>
+                </div>  
+                <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>    
+                <div class="categorie-img">
+                 <img src="images/ph3.png" alt="">
+                </div>
+            </div>
+            <div class="categorie"><!--reply 4-->
+                <div class="categorie-1">
+                 <h3>Promo 4</h3>
+                 <div class="prices">
+                  <p class="price-1">$1999</p>
+                  <p class="prico">$1500</p>
+                </div>  
+                <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>    
+                <div class="categorie-img">
+                 <img src="images/ph4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <hr>
+
+
+    <section class="products container" id="lista-2"> <!--SECCION DE NUEVOS PRODUCTOS-->
+        <h2>Nuevos Productos</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><!--repite de nuevo-->
+                    <div class="product">
+                        <img src="images/ph1.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><!--reply 2-->
+                    <div class="product">
+                        <img src="images/ph2.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><!--reply 3-->
+                    <div class="product">
+                        <img src="images/ph3.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><!--reply 4-->
+                    <div class="product">
+                        <img src="images/ph4.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>   
+    </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr> <!--------------------------------------CAMBIAR IMAGENES LUEGO--------------------------------------------------->
+
+    <section class="products container" id="lista-3"> <!--SECCION DE PRODUCTOS-->
+        <h2>Productos</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><!--repite de nuevo-->
+                    <div class="product">
+                        <img src="images/ph1.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><!--reply 2-->
+                    <div class="product">
+                        <img src="images/ph2.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><!--reply 3-->
+                    <div class="product">
+                        <img src="images/ph2.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><!--reply 4-->
+                    <div class="product">
+                        <img src="images/ph4.png" alt="">
+                        <div class="product-txt">
+                            <h3>Elisyum</h3>
+                            <p>Calidad Premium</p>
+                            <p class="precio">$200</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>   
+    </section>
+
+<hr>
+    <footer class="footer container">
+
+        <div class="link"> <!--reply very veces jaja-->
+            <h3>Contacto</h3>
+
+            <ul>
+                <li><a href="#">Whatsapp:</a></li>
+                <li><a href="#">+595 995 388 840</a></li>
+
+            </ul>
+        </div>
+        <div class="link"><!--reply-->
+            <h3>Instagram</h3>
+
+            <ul>
+                <li><a href="#">@Itz_checho939</a></li>
+            </ul>
+        </div>
+        <div class="link"><!--reply-->
+            <h3>Facebook</h3>
+
+            <ul>
+                <li><a href="#">Checho Sosa Zotelo</a></li>
+            </ul>
+        </div>
+        <div class="link"><!--reply-->
+            <h3>Ciudad</h3>
+
+            <ul>
+                <li><a href="#">Natalio</a></li>
+            </ul>
+        </div>
+        <div class="link"><!--reply-->
+            <h3>Pequeña Frase</h3>
+
+           <p>
+            La vida es un viaje lleno de altibajos, donde la felicidad y el sufrimiento se entrelazan.
+             Aunque no podemos controlar lo que nos sucede, sí podemos controlar cómo reaccionamos ante 
+             ello. Aceptar lo que no podemos cambiar y enfocarnos en lo que sí podemos mejorar nos permite
+             encontrar la paz interior y el equilibrio emocional que necesitamos para seguir adelante.
+           </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
